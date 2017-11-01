@@ -1,0 +1,100 @@
+.daylite-btn {
+	display: inline-block;
+
+	border: 1px solid;
+	border-radius: 5px;
+
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: 600;
+	text-align: center;
+
+	padding: 16px 25px;
+	
+	color: #a89574;
+
+	transition: all .3s ease;
+}
+
+.daylite-btn:hover {
+	background-color: #a89574;
+	color: #fff;
+	border: 1px solid #a89574;
+}
+
+.daylite-btn--red {
+	color: #a8747e;
+}
+
+.daylite-btn--red:hover {
+	background-color: #a8747e;
+	color: #fff;
+	border: 1px solid #a8747e;
+}
+
+.sub-purchase_buttons > a:not(last-child) {
+	margin-right: 5px;
+}
+
+.process_list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	list-style: none;
+}
+
+.process_list-item {
+	flex-basis: 20%;
+	padding: 30px 0;
+
+	text-align: center;
+}
+
+.process_list-item:not(:last-child):after {
+	content: '>';
+
+	color: #a89574;
+
+	position: absolute;
+
+	top: 65px;
+
+	right: 0;
+}
+
+.process_list-item-icon {
+	width: 90px;
+	height: 90px;
+
+	border: 1px solid #a89574;
+	border-radius: 50%;
+
+	position: relative;
+
+	margin: 0 auto 30px;
+}
+
+.process_list-item-icon:before {
+	content: '';
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	width: 45px;
+	height: 45px;
+
+	background-image: url(../img/sprite.png);
+	background-size: 600%;
+}
+
+.process_list-item-icon--human:before {
+	background-position: -140px -9px;
+}
+
+.process_list-item-icon--burger:before {
+	background-position: -215px -81px;
+}
